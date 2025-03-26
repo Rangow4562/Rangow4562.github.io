@@ -1,436 +1,846 @@
-
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Ranjith Kumar K.N - ML Data Engineer</title>
-	<meta name="description" content="Bako - Personal Portfolio & Resume HTML Template">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="https://drive.google.com/uc?export=view&id=1nH57_X0oQwPwKt0vCTe1YX5i6ahZcMjH">
-
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/simplebar.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
-
 <body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container">
+      <a href="#home" class="logo"><span>AI</span>Engineer</a>
+      
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="hamburger">
+        <i class='bx bx-menu'></i>
+      </div>
+    </div>
+  </nav>
 
-<!-- preloader -->
-<div id="preloader">
-	<div class="outer">
-		<div class="spinner">
-			<div class="dot1"></div>
-			<div class="dot2"></div>
-		</div>
-	</div>
-</div>
+  <!-- Return to Top Button -->
+  <button id="return-to-top" aria-label="Return to top">
+    <i class='bx bx-up-arrow-alt'></i>
+  </button>
 
-<!-- site wrapper -->
-<div class="site-wrapper">
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="bg-gradient"></div>
+      <div class="bg-circle-1" data-speed="30"></div>
+      <div class="bg-circle-2" data-speed="20"></div>
+    </div>
 
-	<!-- mobile header -->
-	<div class="mobile-header py-2 px-3 mt-4">
-		<button class="menu-icon mr-2">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
-		<a href="index.html" class="logo"><img src="images/_42A6701-01-03-01-01_EDIT_1.jpg" width="70" height="70" alt="Ranjith Kumar K.N" /></a>
-		<a href="index.html" class="site-title dot ml-2">Ranjith Kumar K.N</a>
-	</div>
+    <div class="container">
+      <div class="hero-content">
+        <h2 class="subtitle">Hello, I'm</h2>
+        <h1 class="title">Ranjith Kumar K.N.</h1>
+        <div class="typing-container">
+          <span id="typing-text"></span>
+        </div>
+        <p class="description">
+          Building intelligent systems that solve real-world problems through
+          innovative AI solutions and cutting-edge research.
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class='bx bx-chevron-down'></i>
+      </div>
+    </div>
+  </section>
 
-	<!-- header -->
-	<header class="left float-left shadow-dark" id="header">
-		<button type="button" class="close" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		<div class="header-inner d-flex align-items-start flex-column">
-			<a href="index.html"><img src="images/profile.jpg" width="70" height="70" alt="Ranjith Kumar K.N" /></a>
-			<a href="index.html" class="site-title dot mt-3">Ranjith Kumar K.N</a>
-			<span class="site-slogan">ML Data Engineer</span>
-			
-			<!-- navigation menu -->
-			<nav>
-				<ul class="vertical-menu scrollspy">
-					<li><a href="#home" class="active"><i class="icon-home"></i>Home</a></li>
-					<li><a href="#about"><i class="icon-user"></i>About</a></li>
-					<li><a href="#resume"><i class="icon-briefcase"></i>Experience</a></li>
-					<li><a href="#eduction"><i class="icon-graduation"></i>Eduction</a></li>
-					<li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
-				</ul>
-			</nav>
-			
-			<!-- footer -->
-			<div class="footer mt-auto">
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="title-bar"></div>
+        <p class="section-description">
+          I'm a passionate AI Engineer with expertise in developing intelligent systems that solve complex problems.
+          With a strong background in machine learning and deep learning, I create innovative solutions that drive
+          business value.
+        </p>
+      </div>
 
-				<!-- social icons -->
-				<ul class="social-icons list-inline">
-					<li class="list-inline-item"><a href="https://www.linkedin.com/in/ranjith-kumar-58a676191"><i class="fa-brands fa-linkedin-in"></i></a></li>
-					<li class="list-inline-item"><a href="https://github.com/Rangow4562"><i class="fa-brands fa-github"></i></a></li>
-					<li class="list-inline-item"><a href="mailto: ranjith.go2260@gmail.com"><i class="fa-brands fa-google"></i></a></li>
-				</ul>
-	<!-- copyright -->
-				<span class="copyright">© 2024 Ranjith Kumar K.N</span>
-			</div>
-		</div>
-	</header>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>My Journey</h3>
+          <p>
+            With over 5 years of experience in AI and machine learning, I've worked on projects ranging from computer
+            vision applications to natural language processing systems. My passion for AI began during my graduate
+            studies, where I focused on developing algorithms for pattern recognition.
+          </p>
+          <p>
+            I've collaborated with cross-functional teams to deliver AI solutions that address real-world challenges
+            across industries including healthcare, finance, and e-commerce. My approach combines technical expertise
+            with a deep understanding of business needs.
+          </p>
+        </div>
 
-	<!-- main content area -->
-	<main class="content float-right">
+        <div class="about-card">
+          <h3>Education & Certifications</h3>
+          <ul class="education-list">
+            <li>
+              <span class="degree">Master of Science in Big Data Analytics, AI Specialization</span>
+              <span class="institution">St. Joseph’s College (Autonomous) - Bengaluru, Karnataka, India, Jun 2020 - Jul 2022</span>
+            </li>
+            <li>
+              <span class="degree">Bachelor of Computer Applications</span>
+              <span class="institution">Seshadri-Puram Institution of Management and Science – Seshadri-Puram, Bengaluru, Karnataka, India, Jun 2016 - Jul 2019</span>
+            </li>
+            <!-- <li>
+              <span class="degree">TensorFlow Developer Certification</span>
+              <span class="institution">Google, 2021</span>
+            </li>
+            <li>
+              <span class="degree">AWS Machine Learning Specialty</span>
+              <span class="institution">Amazon Web Services, 2022</span>
+            </li> -->
+          </ul>
+        </div>
+      </div>
 
-		<!-- section hero -->
-		<section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="https://images.unsplash.com/photo-1633647517075-3bdafbc7b68c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80">
-			<div class="cta mx-auto mt-2">
-				<h1 class="mt-0 mb-4">I’m Ranjith Kumar<span class="dot"></span></h1>
-				<p class="mb-4" style="text-align:justify">An aspiring data engineer with one year of expertise in database management,data model-building, statistical analysis, and big data tools who is team-oriented and innovative. A skilled data science graduate with competence in statistical modeling, data mining, and extraction. I am looking for a career as an entry-level data scientist with BB Tech Industries to further enhance my expertise in machine learning applications.</p>
-				<a href="https://github.com/Rangow4562" class="btn btn-default btn-lg mr-3"><i class="fa-brands fa-github"></i></i>Github</a>
-				<div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
-				<a href="mailto: ranjith.go2260@gmail.com" class="btn btn-border-light btn-lg"><i class="icon-envelope"></i>Hire me</a>
-			</div>
-			<div class="overlay"></div>
-		</section>
+      <h3 class="skills-title">My <span>Skills</span></h3>
 
-		<!-- section about -->
-		<section id="about" class="shadow-blue white-bg padding">
-			<h3 class="section-title">About Me</h3>
-			<div class="spacer" data-height="80"></div>
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skills-card">
+          <h4>Programming Languages</h4>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>R</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Linux</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			<div class="row">
-				    <div class="col-md-3">
-				        <img src="images/profile.jpg" alt="Ranjith Kumar K.N" />
-				    </div>
-				<div class="col-md-9">
-					<h2 class="mt-4 mt-md-0 mb-4">Hello,</h2>
-					<p class="mb-0" style="text-align:justify">I am Ranjith Kumar K.N, aspiring data engineer from Bengaluru, Karnataka, India. I have  experience in database management,data model-building, statistical analysis, and big data tools and customization, also I am good at AWS and Azure.</p>
-					<div class="row my-4">
-						<div class="col-md-6">
-							<p class="mb-2">Name: <span class="text-dark">Ranjith Kumar K.N</span></p>
-							<p class="mb-0">Birthday: <span class="text-dark">26 August, 1998</span></p>
-						</div>
-						<div class="col-md-6 mt-2 mt-md-0 mt-sm-2">
-							<p class="mb-2">Location: <span class="text-dark">Bengaluru, Karnataka, India</span></p>
-							<p class="mb-0">Email: <span class="text-dark">ranjith.kumar.kn26@gmail.com</span></p>
-						</div>
-					</div>
-					<a href="https://drive.google.com/file/d/1x139e-9GUCZfJNthRw0qhx5k7EJbL6U2/view?usp=sharing" class="btn btn-default mr-3"><i class="icon-cloud-download"></i>Download CV</a>
-				</div>
-			</div>
-		</section>
+        <!-- Big Data Tools -->
+        <div class="skills-card">
+          <h4>Big Data Tools</h4>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Hadoop</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Spark</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Scala</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Hive</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>NoSQL</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<!-- section skills -->
-		<section id="skills" class="shadow-blue white-bg padding">
-			<h3 class="section-title">My skills</h3>
-			<div class="spacer" data-height="80"></div>
-			
-			<p class="mb-0">Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails. Explore, Dream, Discover.</p>
-            <p style="font-weight: bold;"> —Mark Twain</p>
-			<div class="row mt-5">
+        <!-- Machine Learning -->
+        <div class="skills-card">
+          <h4>Machine Learning</h4>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>ML Algorithms</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Deep Learning</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-md-6">
-					<!-- skill item -->
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h6 class="float-left mb-3 mt-0">Programming Languages</h6>
-							<h4 class="float-left mb-1 mt-0">Python, R, Javascript,Linux </h4>
-							<span class="float-right">85%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-							</div>
-						</div>
-						<div class="spacer" data-height="50"></div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<!-- skill item -->
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h6 class="float-left mb-3 mt-0">Big Data Tools</h6>
-							<h4 class="float-left mb-1 mt-0">Hadoop, Spark, Sacla, Hive, Nosql </h4>
-							<span class="float-right">80%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-							</div>
-						</div>
-						<div class="spacer" data-height="50"></div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<!-- skill item -->
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h6 class="float-left mb-3 mt-0">Machine Learning and Deep Learning Algorithms</h6>
-							<span class="float-right">80%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-							</div>
-						</div>
-						<div class="spacer" data-height="50"></div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<!-- skill item -->
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h4 class="float-left mb-3 mt-0">Natural Language Processing, LLM, NMT, HuggingFace</h4>
-							<span class="float-right">80%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-							</div>
-						</div>
-						<div class="spacer" data-height="50"></div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<!-- skill item -->
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h6 class="float-left mb-3 mt-0">Business Intelligence Tools</h6>
-							<h4 class="float-left mb-3 mt-0">Google Data Studio, Microsoft Power BI, Tableau</h4>
-							<span class="float-right">80%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-							</div>
-						</div>
-						<div class="spacer" data-height="50"></div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<!-- skill item -->
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h6 class="float-left mb-3 mt-0">Design & Prototyping</h6>
-							<h4 class="float-left mb-3 mt-0">Adobe Illustrator, Adobe Photoshop, Adobe Express</h4>
-							<span class="float-right">90%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-							</div>
-						</div>
-						<div class="spacer" data-height="50"></div>
-					</div>
-				</div>
+        <!-- Natural Language Processing -->
+        <div class="skills-card">
+          <h4>Natural Language Processing</h4>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>LLM</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>NMT</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HuggingFace</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-md-6">
-					<!-- skill item -->
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h6 class="float-left mb-3 mt-0">ML & DL Framework </h6>
-							<h4 class="float-left mb-3 mt-0">TensorFlow, PyTorch, Keras</h4>
-							<span class="float-right">70%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
-							</div>
-						</div>
-						<div class="spacer d-md-none d-lg-none" data-height="50"></div>
-					</div>
-				</div>
+        <!-- Business Intelligence -->
+        <div class="skills-card">
+          <h4>Business Intelligence</h4>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Google Data Studio</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Microsoft Power BI</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Tableau</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-md-6">
-					<!-- skill item -->
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h6 class="float-left mb-3 mt-0">Cloud Computing Tools </h6>
-							<h4 class="float-left mb-3 mt-0">AWS, Azure, Google Cloud Platform </h4>
-							<span class="float-right">70%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
-							</div>
-						</div>
-					</div>
-				</div>
+        <!-- Design & Prototyping -->
+        <div class="skills-card">
+          <h4>Design & Prototyping</h4>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Adobe Illustrator</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Adobe Photoshop</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Adobe Express</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			</div>
-		</section>
+        <!-- ML & DL Frameworks -->
+        <div class="skills-card">
+          <h4>ML & DL Frameworks</h4>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>TensorFlow</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>PyTorch</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Keras</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			<!-- section experience -->
-			<section id="resume" class="shadow-blue white-bg padding">
-				<h3 class="section-title">Work Experience</h3>
-				<div class="spacer" data-height="80"></div>
-	
-				<!-- timeline -->
-				<div class="timeline">
-					<div class="entry">
-						<div class="title">
-							<span>July 2024 - Present</span>
-						</div>
-						<div class="body">
-							<h4 class="mt-0" style="color: #596fff;">Shodh.AI </h4>
-							<h6 class="mt-0">ML Data Engineer</h6>
-							<p>• As a Data Engineer at Shodh AI, I design and implement data pipelines and frameworks to support the development of cutting-edge AI solutions for LLM and Data Foundry</p>
-						</div>
-					</div>
-					<div class="entry">
-						<div class="title">
-							<span>Feb 2023 - July 2024</span>
-						</div>
-						<div class="body">
-							<h4 class="mt-0" style="color: #596fff;">Pravaig Dynamics.</h4>
-							<h6 class="mt-0">Data Engineer</h6>
-							<p>• Develop data connection agents for various data sources - structured and un-structured.</p>
-						</div>
-					</div>
-					<div class="entry">
-						<div class="title">
-							<span>Oct 2022 - Jan 2023</span>
-						</div>
-						<div class="body">
-							<h4 class="mt-0" style="color: #596fff;">Vumonic Data Labs</h4>
-							<h6 class="mt-0">Data Engineer</h6>
-							<p>• Develop and manage robust data pipelines and analytics solutions to drive business insights and optimize data-driven decision-making.</p>
-						</div>
-					</div>
-					<div class="entry">
-						<div class="title">
-							<span>Apr 2022 - Oct 2022</span>
-						</div>
-						<div class="body">
-							<h4 class="mt-0" style="color: #596fff;">TATA CONSULTANCY SERVICES (TCS).</h4>
-							<h6 class="mt-0">Big Data Engineer</h6>
-							<p>• Offered friendly and efficient service to customers, handled challenging situations with ease.Led projects and analyzed data to identify opportunities for improvement.</p>
-						</div>
-					</div>
-					<div class="entry">
-						<div class="title">
-							<span>Feb 2022 - May 2022</span>
-						</div>
-						<div class="body">
-							<h4 class="mt-0" style="color: #596fff;">Menmozhi Techonologies.</h4>
-							<h6 class="mt-0">Researcher - Data Science</h6>
-							<p>• Experience in the space of Software Development in Computer Vision utilizing a mix of customary Image Processing based and current Machine Learning/Deep Learning-based methods.</p>
-						</div>
-					</div>
-					<span class="timeline-line"></span>
-				</div>
-			</section>
-	
+        <!-- Cloud Computing -->
+        <div class="skills-card">
+          <h4>Cloud Computing</h4>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>AWS</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Azure</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Google Cloud Platform</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	
-		<!-- section experience -->
-		<section id="eduction" class="shadow-blue white-bg padding">
-			<h3 class="section-title">Education</h3>
-			<div class="spacer" data-height="80"></div>
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <div class="title-bar"></div>
+        <p class="section-description">
+          My professional journey in the field of artificial intelligence and data science.
+        </p>
+      </div>
 
-			<!-- timeline -->
-			<div class="timeline">
-				<div class="entry">
-					<div class="title">
-						<span>Jun 2020 - Jul 2022</span>
-					</div>
-					<div class="body">
-						<h4 class="mt-0" style="color: #596fff;">St. Joseph’s College (Autonomous) - Bengaluru, Karnataka, India</h4>
-						<h6 class="mt-0">Master of Science in Big Data Analytics</h6>
-						<p style="text-align:justify">St Josephs College is a private Institution run by the Jesuits of Karnataka.This year marks the 500th anniversary of the wounding of their founder, Ignatius of Loyola at a battle in Pamplona in 1521. That event changed the course of his life.</p>
-					</div>
-				</div>
-				<div class="entry">
-					<div class="title">
-						<span>Jun 2016 - Jul 2019</span>
-					</div>
-					<div class="body">
-						<h4 class="mt-0" style="color: #596fff;">Seshadri-Puram Institution of Management and Science – Seshadri-Puram,
-							Bengaluru, Karnataka, India</h4>
-							<h6 class="mt-0">Bachelor of Computer Applications</h6>
-						<p style="text-align:justify">Established in 1973 and affiliated to Bangalore University, Seshadripuram College quickly attained a prominent position.The institution has been awarded the highest 'A' grade in the 2nd and 3rd cycles of NAAC accreditation and regularly features among the top Commerce & Science colleges in India.</p>
-					</div>
-				</div>
-			
-				<span class="timeline-line"></span>
-			</div>
-		</section>
+      <div class="timeline">
+        <div class="timeline-line"></div>
 
-		
+        <!-- Experience Item 1 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot">
+            <i class='bx bx-briefcase'></i>
+          </div>
+          <div class="timeline-content">
+            <div class="experience-header">
+              <div class="experience-icon">
+                <i class='bx bx-briefcase'></i>
+              </div>
+              <div>
+                <h3 class="experience-title">AI Engineer</h3>
+                <p class="experience-company">Analytical Intelligence International</p>
+              </div>
+            </div>
+            <div class="experience-period">
+              <i class='bx bx-calendar'></i>
+              <span>Jan 2025 - Present</span>
+            </div>
+            <p class="experience-description">
+              Lead the development of LLM & VLM for autonomous systems. Designed and implemented deep learning models that improved object detection accuracy by 35%. Managed a team of 4 engineers and collaborated with cross-functional teams to deliver projects on time.
+            </p>
+            <div class="experience-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Azure</span>
+              <span class="tag">Devops</span>
+              <span class="tag">MLflow</span>
+            </div>
+          </div>
+        </div>
 
-		
-		<!-- section contact -->
-		<section id="contact" class="shadow-blue white-bg padding">
-			<h3 class="section-title">Get in touch</h3>
-			<div class="spacer" data-height="80"></div>
+        <!-- Experience Item 2 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot">
+            <i class='bx bx-briefcase'></i>
+          </div>
+          <div class="timeline-content">
+            <div class="experience-header">
+              <div class="experience-icon">
+                <i class='bx bx-briefcase'></i>
+              </div>
+              <div>
+                <h3 class="experience-title">ML Data Engineer</h3>
+                <p class="experience-company">Shodh AI</p>
+              </div>
+            </div>
+            <div class="experience-period">
+              <i class='bx bx-calendar'></i>
+              <span>June 2024 - Jan 2025</span>
+            </div>
+            <p class="experience-description">
+              As a ML Data Engineer at Shodh AI, I design and implement data pipelines and frameworks to support the development of cutting-edge AI solutions for LLM and Data Foundry. I work closely with data scientists and machine learning engineers to ensure the availability and quality of data for training and evaluation of models.
+            </p>
+            <div class="experience-tags">
+              <span class="tag">Python</span>
+              <span class="tag">NLP</span>
+              <span class="tag">HuggingFace</span>
+              <span class="tag">Spark</span>
+              <span class="tag">Azure</span>
+              <span class="tag">LLM</span>
+              <span class="tag">SLM</span>
+              <span class="tag">DevOps</span>
+              <span class="tag">AWS</span>
+            </div>
+          </div>
+        </div>
 
-			<div class="row">
-				
-				<div class="col-md-4 mb-4 mb-md-0">
-					<!-- contact info -->
-					<div class="contact-info mb-5">
-						<i class="icon-phone"></i>
-						<div class="details">
-							<h5>Phone</h5>
-							<span>+91 9008769944</span>
-						</div>
-					</div>
-					<div class="contact-info mb-5">
-						<i class="icon-envelope"></i>
-						<div class="details">
-							<h5>Email address</h5>
-							<span>ranjith.go2260@gmail.com</span>
-						</div>
-					</div>
-					<div class="contact-info">
-						<i class="icon-location-pin"></i>
-						<div class="details">
-							<h5>Location</h5>
-							<span>Bengaluru, Karnataka, India</span>
-						</div>
-					</div>
-				</div>
+        <!-- Experience Item 3 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot">
+            <i class='bx bx-briefcase'></i>
+          </div>
+          <div class="timeline-content">
+            <div class="experience-header">
+              <div class="experience-icon">
+                <i class='bx bx-briefcase'></i>
+              </div>
+              <div>
+                <h3 class="experience-title">Data Engineer</h3>
+                <p class="experience-company">PRAVAIG PVT LTD</p>
+              </div>
+            </div>
+            <div class="experience-period">
+              <i class='bx bx-calendar'></i>
+              <span>Jan 2023 - June 2024</span>
+            </div>
+            <p class="experience-description">
+              Develop data connection agents for various data sources - structured and un-structured. Build Autonomus Driving System data pipelines and ADAS systems with Ingreate LLM framework. Collaborate with data scientists to ensure data quality and availability for model training. Implemented a data validation framework that reduced data errors by 30%.
+            </p>
+            <div class="experience-tags">
+              <span class="tag">NLP</span>
+              <span class="tag">Python</span>
+              <span class="tag">HuggingFace</span>
+              <span class="tag">Spark</span>
+              <span class="tag">Azure Devops</span>
+              <span class="tag">AWS</span>
+              <span class="tag">LLM</span>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-md-8"  id="map">
-					<!-- Contact Form -->
-				
-						
-						
-						<div class="row">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7124946070057!2d77.51271701434638!3d13.053963590801898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae232ab460f61d%3A0xc8b96b91783e3248!2s526%2C%205th%20Cross%20Rd%2C%20Siddeshwara%20Nilaya%2C%20Bhel%20Mini%20Colony%2C%20T.%20Dasarahalli%2C%20Bengaluru%2C%20Karnataka%20560057!5e0!3m2!1sen!2sin!4v1662527902429!5m2!1sen!2sin" width="600" height="450" style="border-radius: 10%"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+                <!-- Experience Item 3 -->
+                <div class="timeline-item right">
+                  <div class="timeline-dot">
+                    <i class='bx bx-briefcase'></i>
+                  </div>
+                  <div class="timeline-content">
+                    <div class="experience-header">
+                      <div class="experience-icon">
+                        <i class='bx bx-briefcase'></i>
+                      </div>
+                      <div>
+                        <h3 class="experience-title">Big Data Engineer</h3>
+                        <p class="experience-company">TATA CONSULTANCY SERVICES (TCS).</p>
+                      </div>
+                    </div>
+                    <div class="experience-period">
+                      <i class='bx bx-calendar'></i>
+                      <span>Apr 2022 - Oct 2022</span>
+                    </div>
+                    <p class="experience-description">
+                      Offered friendly and efficient service to customers, handled challenging situations with ease.Led projects and analyzed data to identify opportunities for improvement. Developed and maintained data pipelines for large-scale data processing. Collaborated with cross-functional teams to deliver high-quality solutions.
+                    </p>
+                    <div class="experience-tags">
+                      <span class="tag">R</span>
+                      <span class="tag">Python</span>
+                      <span class="tag">SQL</span>
+                      <span class="tag">Tableau</span>
+                      <span class="tag">Statistical Modeling</span>
+                    </div>
+                  </div>
+                </div>
+        <!-- Experience Item 4 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot">
+            <i class='bx bx-briefcase'></i>
+          </div>
+          <div class="timeline-content">
+            <div class="experience-header">
+              <div class="experience-icon">
+                <i class='bx bx-briefcase'></i>
+              </div>
+              <div>
+                <h3 class="experience-title">Research Assistant</h3>
+                <p class="experience-company">Menmozhi Techonologies.</p>
+              </div>
+            </div>
+            <div class="experience-period">
+              <i class='bx bx-calendar'></i>
+              <span>Feb 2022 - May 2022</span>
+            </div>
+            <p class="experience-description">
+              Experience in the space of Software Development in Computer Vision utilizing a mix of customary Image Processing based and current Machine Learning/Deep Learning-based methods. Worked on the development of a computer vision-based solution for real-time object detection and tracking. Collaborated with a team of researchers to publish findings in a peer-reviewed journal.
+            </p>
+            <div class="experience-tags">
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Reinforcement Learning</span>
+              <span class="tag">Research Methods</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						
-					    </div>
-					<!-- Contact Form end -->
-				</div>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="title-bar"></div>
+        <p class="section-description">
+          Explore my portfolio of AI and machine learning projects that
+          demonstrate my expertise in developing innovative solutions.
+        </p>
+      </div>
 
-			</div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://hekate.ai/wp-content/uploads/2024/01/generative-ai-la-gi.jpg" alt="Neural Image Synthesis">
+            <div class="project-overlay">
+              <div class="project-header">
+                <h3 class="project-title">Product-Photography-with-generative-A.I</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Rangow4562/Generative_ai?tab=readme-ov-file" aria-label="View GitHub repository"><i class='bx bxl-github'></i></a>
+                  <a href="#" aria-label="View live demo"><i class='bx bx-link-external'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <p class="project-description">
+              The script is designed for background change tasks and can be useful in creative applications or image editing workflows.
+            </p>
+            <div class="project-tags">
+              <span class="tag">VLM</span>
+              <span class="tag">GANs</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Transformers</span>
+            </div>
+          </div>
+        </div>
 
-		</section>
-		
-	</main>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://aijourney-stores-prod.s3.amazonaws.com/category-105/1732679431878-ai-math-solver.jpg" alt="Intelligent Recommendation Engine">
+            <div class="project-overlay">
+              <div class="project-header">
+                <h3 class="project-title">Math Solver with Retrieval-Augmented Generation (RAG)</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Rangow4562/math_fine_tuned_pythia" aria-label="View GitHub repository"><i class='bx bxl-github'></i></a>
+                  <a href="#" aria-label="View live demo"><i class='bx bx-link-external'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <p class="project-description">
+              The Math Problem Solver with Retrieval-Augmented Generation (RAG) is a Python-based project designed to automate the solving of mathematical problems using state-of-the-art natural language processing (NLP) techniques. It leverages the power of Transformers models, fine-tuned on mathematical datasets, to provide accurate solutions to algebraic and linear equations.
+            </p>
+            <div class="project-tags">
+              <span class="tag">NLP</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Python</span>
+              <span class="tag">LLM</span>      
+              <span class="tag">AWS</span>
+            </div>
+          </div>
+        </div>
 
-</div>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://scx2.b-cdn.net/gfx/news/hires/2021/dog-and-owner.jpg" alt="Conversational AI Assistant">
+            <div class="project-overlay">
+              <div class="project-header">
+                <h3 class="project-title">Dog_emotion_identification_system</h3>
+                <div class="project-links">
+                  <a href="https://github.com/Rangow4562/Dog_emotion_identification_system" aria-label="View GitHub repository"><i class='bx bxl-github'></i></a>
+                  <a href="https://pubs.aip.org/aip/acp/article-abstract/2790/1/020002/2908030/A-study-on-dog-emotion-recognition-using-deep?redirectedFrom=fulltext" aria-label="View live demo"><i class='bx bx-link-external'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <p class="project-description">
+              We follow the ICML's official training, validation, and test sets while training on our dataset (FER2013 dataset reference). Our dataset contains 5954 pictures of four main emotions: anger, fear, happiness, and sadness.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Emotion Detection</span>
+              <span class="tag">CNN</span>
+              <span class="tag">AWS</span>
+              <span class="tag">FastAPI</span>
+            </div>
+          </div>
+        </div>
 
-<!-- Go to top button -->
-<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZmxs6x76E2G2FGo5Rfc3gGpkKvWHSkYp3eLu13LNKvxhskT4OLepqRIn0Wq_O3-HTWj0&usqp=CAU" alt="Anomaly Detection Platform">
+            <div class="project-overlay">
+              <div class="project-header">
+                <h3 class="project-title">Anomaly Detection Platform</h3>
+                <div class="project-links">
+                  <a href="#" aria-label="View GitHub repository"><i class='bx bxl-github'></i></a>
+                  <a href="#" aria-label="View live demo"><i class='bx bx-link-external'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <p class="project-description">
+              Real-time anomaly detection system for IoT sensor data using unsupervised learning algorithms and time-series analysis.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Anomaly Detection</span>
+              <span class="tag">Time Series</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Kafka</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- SCRIPTS -->
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/infinite-scroll.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/validator.js"></script>
-<script src="js/custom.js"></script>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="title-bar"></div>
+        <p class="section-description">
+          Have a project in mind or want to discuss potential collaborations?
+          Feel free to reach out to me using the form below.
+        </p>
+      </div>
 
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-icon">
+                <i class='bx bx-envelope'></i>
+              </div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <p>ranjith.kumar.kn26@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class='bx bx-map'></i>
+              </div>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>Bengaluru, Karnataka, India</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <i class='bx bx-phone'></i>
+              </div>
+              <div class="info-content">
+                <h4>Phone</h4>
+                <p>+91 9008769944</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+              <a href="https://github.com/Rangow4562" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+              <a href="https://www.linkedin.com/in/ranjith-kumar-58a676191/" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+              <!-- <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h3>Send Message</h3>
+          <div id="form-success" class="form-success">
+            Thank you for your message! I'll get back to you soon.
+          </div>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
+              <span>Send Message</span>
+              <i class='bx bx-send'></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Particles Animation */
+    .particles-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .particle {
+      position: absolute;
+      background-color: rgba(34, 197, 94, 0.3);
+      border-radius: 50%;
+      animation: float-particle 15s infinite linear;
+    }
+    
+    @keyframes float-particle {
+      0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) translateX(100px);
+        opacity: 0;
+      }
+    }
+  </style>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
